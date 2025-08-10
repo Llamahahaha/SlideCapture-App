@@ -1,0 +1,17 @@
+/build/
+*.vcxproj.user
+*.suo
+*.exe
+*.pdb
+*.obj
+*.idb
+*.ipch
+*.log
+*.tlog
+*.ilk
+*.cache
+.vs/
+# Ignore DLLs and build output
+*.dll
+/build/
+
