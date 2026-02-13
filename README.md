@@ -12,8 +12,8 @@ How to Build and Run
 
 Open your terminal (or PowerShell on Windows) and run:
 
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/Llamahahaha/SlideCapture-App.git
+cd SlideCapture-App.git
 
 2. Create a build folder
 
@@ -22,7 +22,7 @@ This keeps compiled files separate from your source code:
 mkdir build
 cd build
 
-3. Generate build files with CMake
+3. Generate build files with CMake and build(compile) the project
 
 Run:
 
@@ -31,18 +31,19 @@ cmake ..
     The .. tells CMake to look at the CMakeLists.txt file in the parent folder.
 
     CMake will check your system and prepare the project for building.
-
-4. Build (compile) the project
+    This compiles the program into an executable file.
 
 cmake --build .
-
-    This compiles the program into an executable file.
 
     On Windows, it will create a .exe file inside Debug or Release folders.
 
     On Linux/macOS, it will create an executable with no extension.
+    
+Or if you have ninja:
+cmake -G Ninja ..
+ninja
 
-5. Run the program
+4. Run the program
 
 On Linux / macOS:
 
